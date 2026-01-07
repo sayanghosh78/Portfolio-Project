@@ -77,19 +77,18 @@ html{
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #6a11cb, #2575fc, #0a0a0a);
-  opacity: 0.85;
+  background: url("Profile-Image.jpeg") center/cover no-repeat;
+  border: 3px solid #1c0845;
+  transition: .4s ease;
 }
 
-/* Optional smooth animation */
-.gradient-circle {
-  animation: float 6s ease-in-out infinite alternate;
+/* Hover Effect */
+.gradient-circle:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 30px rgba(122, 60, 255, 0.8);
+  background-size: 115%;  /* slight zoom effect */
 }
 
-@keyframes float {
-  from { transform: translateY(0); }
-  to { transform: translateY(-10px); }
-}
 
 
 /* <!--- Skills Section ---> */
